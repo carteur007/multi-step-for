@@ -3,16 +3,375 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Multi Step form</title>
+		<title>Formulaire sur plusieurs étapes </title>
 		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/materialize.min.css" />
 	</head>
 	<body>
-		<div class="app">
-			<h2>Formulaire sur plusieurs étapes</h2>
-		</div>
-		<script src="js/jquery-3.7.1.min.js"></script>
-		<script src="js/materialize.min.js"></script>
+		<main class="app">
+			<div class="content">
+				<!-- FORM-->
+				<form action="#" class="form">
+					<h2 class="center">Formulaire sur plusieurs étapes</h2>
+					<!-- PROGRESS BAR-->
+					<div class="progressbar">
+						<div class="progress" id="progress"></div>
+						<div class="progress-step progress-step-active"data-title="premier"></div>
+						<div class="progress-step" data-title="second"></div>
+						<div class="progress-step" data-title="troisième"></div>
+						<div class="progress-step" data-title="quatrième"></div>
+						<div class="progress-step" data-title="cinquième"></div>
+					</div>
+					<!-- STEP-ONE-->
+					<div class="form-step form-step-active">
+						<div class="toopart">
+							<div>
+								<div class="input-group">
+									<h4 class="form-head center">
+										Identifiants
+									</h4>
+								</div>
+								<div class="input-group">
+									<label for="name">Nom</label>
+									<input
+										type="text"
+										name="name"
+										id="name"
+										placeholder="Nom d'utilisateur"
+									/>
+								</div>
+								<div class="input-group">
+									<label for="prenom">Prenom</label>
+									<input
+										type="text"
+										name="prenom"
+										id="prenom"
+										placeholder="Prenom de l'utilisateur"
+									/>
+								</div>
+								<div class="input-group">
+									<label for="email">Email</label>
+									<input
+										type="email"
+										name="email"
+										id="email"
+										placeholder="Email de l'utilisateur"
+									/>
+								</div>
+							</div>
+							<div>
+								<div class="input-group">
+									<h4 class="form-head center">
+										Identifiants
+									</h4>
+								</div>
+								<div class="input-group">
+									<label for="naissace">Naissance</label>
+									<input
+										type="date"
+										name="naissace"
+										id="naissace"
+										placeholder="11/01/2002"
+									/>
+								</div>
+								<div class="input-group">
+									<label for="ville">Ville</label>
+									<input
+										type="text"
+										name="ville"
+										id="ville"
+										placeholder="Ville de l'utilisateur"
+									/>
+								</div>
+								<div class="input-group">
+									<label for="quartier">Quartier</label>
+									<input
+										type="text"
+										name="quartier"
+										id="quartier"
+										placeholder="Quartier de l'utilisateur"
+									/>
+								</div>
+							</div>
+						</div>
+						<div class="button-step">
+							<a
+								href="#"
+								class="btn btn-next btn-large bleu-ciel white-text right"
+							>
+								Next
+							</a>
+						</div>
+					</div>
+					<!-- STEP-TWO-->
+					<div class="form-step">
+						<div>
+							<div class="input-group-too">
+								<h4 class="form-head center">Competences</h4>
+							</div>
+							<div class="input-group-too">
+								<label for="site">Site Iternet</label>
+								<input
+									type="text"
+									name="site"
+									id="site"
+									placeholder="Site Internet de l'utilisateur"
+								/>
+							</div>
+							<div class="toopart">
+								<div class="input-group">
+									<label for="diplome">Diplome</label>
+									<input
+										type="text"
+										name="diplome"
+										id="diplome"
+										placeholder="Diplome d'utilisateur"
+									/>
+								</div>
+								<div class="input-group">
+									<label for="anneeOptention">Année d'obtention</label>
+									<input
+										type="date"
+										name="anneeOptention"
+										id="anneeOptention"
+										placeholder="28/09/2023"
+									/>
+								</div>
+							</div>
+							<div class="input-group-too">
+								<label for="description">Description de la formation</label>
+								<input
+									type="text"
+									name="description"
+									id="description"
+									placeholder="Description de la formation"
+								/>
+							</div>
+						</div>
+						<div class="button-step">
+							<a
+								href="#"
+								class="btn btn-prev btn-large bleu-ciel white-text left"
+							>
+								Back
+							</a>
+							<a
+								href="#"
+								class="btn btn-next btn-large bleu-ciel white-text right"
+							>
+								Next
+							</a>
+						</div>
+					</div>
+					<!-- STEP-TREE-->
+					<div class="form-step">
+						<div class="toopart">
+							<div>
+								<div class="input-group">
+									<h4 class="form-head center">
+										Identifiants
+									</h4>
+								</div>
+								<div class="input-group">
+									<label for="longmessage">Long Message</label>
+									<textarea
+										name="longmessage"
+										id="longmessage"
+										placeholder="Message de l'utilisateur"
+									></textarea>
+								</div>
+								<div class="input-group">
+									<label for="shortmessage">Short Message</label>
+									<input
+										type="text"
+										name="shortmessage"
+										id="shortmessage"
+										placeholder="Message de l'utilisateur"
+									/>
+								</div>
+								<div class="input-group">
+									<label for="nationalite">Nationalité</label>
+									<input
+										type="text"
+										name="nationalite"
+										id="nationalite"
+										placeholder="Nationalite de l'utilisateur"
+									/>
+								</div>
+							</div>
+							<div>
+								<div class="input-group">
+									<h4 class="form-head center">
+										Identifiants
+									</h4>
+								</div>
+								<div class="input-group">
+									<label for="nombreEnfant">Nombre d'enfants</label>
+									<input
+										type="number"
+										name="nombreEnfant"
+										id="nombreEnfant"
+									/>
+								</div>
+								<div class="input-group">
+									<label for="telephone">Téléphone fix</label>
+									<input
+										type="phone"
+										name="telephone"
+										id="telephone"
+									/>
+								</div>
+								<div class="input-group">
+									<label for="mobile">Téléphone Mobile</label>
+									<input
+										type="phone"
+										name="mobile"
+										id="mobile"
+									/>
+								</div>
+							</div>
+						</div>
+						<div class="button-step">
+							<a
+								href="#"
+								class="btn btn-prev btn-large bleu-ciel white-text left"
+							>
+								Back
+							</a>
+							<a
+								href="#"
+								class="btn btn-next btn-large bleu-ciel white-text right"
+							>
+								Next
+							</a>
+						</div>
+					</div>
+					<!-- STEP-FOUR-->
+					<div class="form-step">
+						<div>
+							<div class="input-group-too">
+								<h4 class="form-head center">Competences</h4>
+							</div>
+							<div class="input-group-too">
+								<label for="nomEpoux">Nom de l'épouse|époux</label>
+								<input
+									type="text"
+									name="nomEpoux"
+									id="nomEpoux"
+									placeholder="Nom de l'épouse(époux)"
+								/>
+							</div>
+							<div class="toopart">
+								<div class="input-group">
+									<label for="region">Region</label>
+									<input
+										type="text"
+										name="region"
+										id="region"
+										placeholder="Region de l'utilisateur"
+									/>
+								</div>
+								<div class="input-group">
+									<label for="departement">Département</label>
+									<input
+										type="text"
+										name="departement"
+										id="departement"
+										placeholder="Departement de l'utilisateur"
+									/>
+								</div>
+							</div>
+							<div class="input-group-too">
+								<label for="numeroCNI">Numero de CNI</label>
+								<input
+									type="number"
+									name="numeroCNI"
+									id="numeroCNI" 
+									placeholder="Numero de CNI d'utilisateur"
+								/>
+							</div>
+							<div class="input-group-too">
+								<label for="DateExpCNI">Date  d'expiration</label>
+								<input
+									type="date"
+									name="DateExpCNI"
+									id="DateExpCNI" 
+									placeholder="Date  d'expiration"
+								/>
+							</div>
+							<div class="toopart">
+								<div class="input-group">
+									<label for="nomPere">Nom du père</label>
+									<input
+										type="text"
+										name="nomPere"
+										id="nomPere"
+										placeholder="Nom du père"
+									/>
+								</div>
+								<div class="input-group">
+									<label for="nomMere">Nom de la mère</label>
+									<input
+										type="text"
+										name="nomMere" 
+										id="nomMere"
+										placeholder="Nom de la mère"
+									/>
+								</div>
+							</div>
+							<div class="input-group-too">
+								<label for="descriptionFamille">Description de la famille</label>
+								<textarea
+									type="text"
+									name="descriptionFamille" 
+									id="descriptionFamille"
+									placeholder="Description de la famille"
+								></textarea>
+							</div>
+						</div>
+						<div class="button-step">
+							<a
+								href="#"
+								class="btn btn-prev btn-large bleu-ciel white-text left"
+							>
+								Back
+							</a>
+							<a
+								href="#"
+								class="btn btn-next btn-large bleu-ciel white-text right"
+							>
+								Next
+							</a>
+						</div>
+					</div>
+					<!-- STEP-FIVE-->
+					<div class="form-step">
+						<div class="lastpart">
+							<div class="input-group-too">
+								<label for="image">Image</label>
+								<input type="file" name="image" id="image" />
+							</div>
+
+							<div class="input-group-too">
+								<div class="button-step">
+									<a
+										href="#"
+										class="btn btn-prev btn-large bleu-ciel white-text left"
+									>
+										Back
+									</a>
+									<button
+										type="submit"
+										class="btn btn-next btn-large bleu-ciel white-text right"
+									>
+										Ajouter
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</main>
 		<script src="js/script.js"></script>
 	</body>
 </html>
